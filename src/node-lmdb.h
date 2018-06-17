@@ -121,6 +121,11 @@ public:
         (Wrapper for `mdb_env_create`)
     */
     static NAN_METHOD(ctor);
+
+    /*
+        Get the maximum size of keys and MDB_DUPSORT data we can write.
+    */
+    static NAN_METHOD(getMaxkeysize);
     
     /*
         Gets statistics about the database environment.

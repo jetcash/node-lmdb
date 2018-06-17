@@ -46,6 +46,7 @@
         }],
         ["OS=='mac'", {
           "xcode_settings": {
+            "OTHER_CFLAGS": ["-Wno-unused-parameter","-Wno-missing-field-initializers"],
             "OTHER_CPLUSPLUSFLAGS" : ["-std=c++11"],
             "MACOSX_DEPLOYMENT_TARGET": "10.7",
             "OTHER_LDFLAGS": ["-std=c++11"],
